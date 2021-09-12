@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Style the tab */
+.tab {
+    padding-left: 40%;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    height: 49px;
+    background-color: transparent;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: white;
+    margin-top: .3%;
+    margin-left: .5%;
+    border-radius: 10px;
+    background-color: inherit;
+    float: left;
+    border: none;
+    font-size: 10px;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 10px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: white;
+    color: #b6d0cf;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+    border-top: none;
+  }
+  /* Fade in tabs */
+  @-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
